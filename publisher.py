@@ -17,7 +17,7 @@ parser.add_argument("--topic", type=str, default="/",
 args = parser.parse_args()
 
 client = mqtt.Client("Pub-test")
-client.tls_set(ca_certs='/cert/ca.crt',
+client.tls_set(ca_certs='./cert/ca.crt',
                tls_version=ssl.PROTOCOL_TLSv1_2, cert_reqs=ssl.CERT_NONE)
 
 def send_messages():
