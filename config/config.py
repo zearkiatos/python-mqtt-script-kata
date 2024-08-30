@@ -9,6 +9,6 @@ class Config:
     ENVIRONMENT = environment
     APP_NAME=os.getenv('APP_NAME')
     HOST=os.getenv('HOST')
-    USER=os.getenv('USER')
+    MQTT_USER=os.getenv('MQTT_USER')
     PORT=os.getenv('PORT')
-    PASSWORD=os.getenv('PASSWORD')
+    MQTT_PASSWORD=os.getenv('MQTT_PASSWORD')

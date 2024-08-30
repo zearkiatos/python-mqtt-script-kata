@@ -11,8 +11,8 @@ config = Config()
 HOST = config.HOST
 PORT =  int(config.PORT)
 
-USER = config.USER
-PASSWD = config.PASSWORD
+USER = config.MQTT_USER
+PASSWD = config.MQTT_PASSWORD
 
 client = mqtt.Client("subscriber-test")
 client.tls_set(ca_certs='./cert/ca.crt',

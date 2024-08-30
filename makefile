@@ -5,4 +5,4 @@ install:
 	pip install -r requirements.txt --break-system-packages
 
 subscriber:
-	python subscriber.py
+	python3 subscriber.py
