@@ -3,3 +3,4 @@ venv
 __pycache__
 cert
 .DS_Store
+results

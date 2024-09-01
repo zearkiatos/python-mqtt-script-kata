@@ -53,5 +53,8 @@ client.on_connect = on_connect
 client.on_connect_fail = on_connect
 client.on_disconnect = on_disconnect
 
+print(HOST)
+print(PORT)
+
 client.connect(HOST, PORT, 60)
 client.loop_forever()

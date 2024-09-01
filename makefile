@@ -9,3 +9,9 @@ subscriber:
 
 publisher:
 	python3 publisher.py --host $(IP_BROKER) --user $(USER) --passwd $(PASSWORD) --topic $(TOPIC)
+
+docker-up:
+	docker compose up --build
+
+docker-down:
+	docker compose down
