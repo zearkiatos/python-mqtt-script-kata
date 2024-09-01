@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: python-mqtt-script-kata
+    restart: always
+    volumes:
+      - ".:/app"
+    env_file:
+      - .env
+    tty: true

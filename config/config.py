@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 environment = os.getenv('ENVIRONMENT')
 
-load_dotenv(dotenv_path='.env')
+load_dotenv(dotenv_path='.env', override=True)
 
 class Config:
     ENVIRONMENT = environment
